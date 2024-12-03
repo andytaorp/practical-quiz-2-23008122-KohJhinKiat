@@ -2,6 +2,8 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "./components/App";
 
+
+
 describe("Favorite Movies App", () => {
   // General App Tests
   test("renders the app and shows initial UI", () => {
@@ -10,6 +12,7 @@ describe("Favorite Movies App", () => {
     expect(screen.getByPlaceholderText(/Movie Title/i)).toBeInTheDocument();
     expect(screen.getByText(/Add Movie/i)).toBeInTheDocument();
   });
+
 
   // AddMovieForm Tests
   test("adds a new movie", () => {
